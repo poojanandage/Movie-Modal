@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+	<html>
+		<head> 
+			<title>posts</title>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+			<link rel="stylesheet" href="./assets/css/style.css">
+			
+		</head>
+		<body>
+			<header class="bg-primary text-white p-4">
+				<div class="row">
+					<div class="col-sm-9">
+						<h2>Movie Gallary</h2>
+					</div>
+					<div class="col-sm-3 text-right">
+						<button class="btn btn-success" id="addMovieBtn">
+							Add movie
+						</button>
+					</div>
+				</div>
+			</header>
+			<section>
+				<div class="container">
+					<div class="row mt-4" id="moveInfoContent">
+						<!-- <div class="col-md-4">
+							<div class="card">
+								<div class="card-body">
+									<figure>
+										<div class="img-info">
+											<img src="" alt="imageName" class="img img-fluid img-thumbnail">
+										</div>
+										<figcaption>
+											<h3>movie title</h3>
+											<p class="rating">rating</p>
+											<div class="text-right">
+												<button class="btn btn-success">Edit</button>
+												<button class="btn btn-danger">Delete</button>
+											</div>
+										</figcaption>
+									</figure>
+		
+								</div>
+							</div>
+						</div> -->
+					</div>
+				</div>
+			</section>
+			<div class="backdrop closebtns" id="backdropBtn">
+
+			</div>
+			<div class="myModal" id="myModalBtn">
+				<div class="modal-panel">
+					<div class="modal-heading">
+						<h3>Add Movie Title <i class="fas fa-times closebtns"></i></h3>
+					
+					</div>
+				
+				<div class="modal-contentt p-3">
+					<form id="movieInfo">
+						<div class="form-group">
+							<label for="title">Add Movie Title</label>
+							<input type="text" name="title" id="title"class="form-control"required>
+						</div>
+						<div class="form-group">
+							<label for="addMovieTitle">Image Url</label>
+							<input type="text" name="imageUrl" id="imageUrl" class="form-control"required>
+						</div>
+						<div class="form-group">
+							<label for="ImageUrl">Rating</label>
+							<input type="text" name="" id="rating" class="form-control"required>
+						</div>
+						<div class="form-group text-right">
+							<input type="submit" value="Add" class="btn btn-outline-primary " id="addmovie">
+							<input type="button" value="update" class="btn btn-outline-primary d-none " id="upBtn">
+							<input type="button" value="cancel" class="btn btn-outline-danger closebtns">
+						</div>
+					</form>
+				</div>
+				</div>
+			</div>
+			<script src="./assets/js/app.js"></script>
+		</body>
+	</html>
